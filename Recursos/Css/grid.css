@@ -1,0 +1,48 @@
+
+.contenedor {
+
+    /* ..existing styles */
+
+padding: 2em;
+     
+    grid-template-areas:    "header header header"
+                            "main main sidebar"
+                            "footer footer footer";
+}
+
+
+header {
+	display: grid;
+	
+	grid-template-columns:  20% 1fr;
+
+  grid-area: header;
+
+}
+.slider{
+display: grid;
+ 
+grid-template-columns: center;
+grid-gap: 20px;
+ 
+
+  grid-area: main;
+}
+
+.main{
+	display: grid;
+	grid-template-columns: 80% 20%;
+    grid-area: sidebar;
+}
+
+
+
+.pie {
+  
+  display: grid;
+
+  grid-template-columns: 80% 20%;
+  color: #fff;
+  background: #232f3e;
+  grid-area: footer;
+}

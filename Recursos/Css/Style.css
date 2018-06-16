@@ -1,0 +1,255 @@
+@import url(grid.css);
+
+/*Creacion del menu */
+/*
+.encab{
+	float: left;
+}
+.menu{
+	float: left;
+}
+*/
+header nav ul{
+	list-style: none;
+	font:bold;
+}
+header nav > ul{
+	display: grid;
+	width: 600px;
+	float: right;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+header nav > ul li{
+
+	border: 1PX;
+	border-radius: 9px;
+	text-shadow: 0px 1px 0px #fff;
+} 
+
+header nav > ul > li:hover > ul{
+	display: block;
+
+}
+
+header nav > ul > li > ul{
+	display: block;
+	position: absolute;
+}
+header nav > ul > li > ul{
+	display: none;
+	border:1px;
+	border-radius: 9px;
+}
+
+header nav > ul li a{
+	color: #999;
+	display: block;
+	position: relative;
+	line-height: 10px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all 2s ease-in-out;
+	-moz-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out;
+	-o-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;	
+}
+header nav > ul > li > ul >li a:hover{
+	background-image:-webkit-gradient(linear,left top, left bottom, from(#FFF), to(#E3E3E3));
+	background-image: -moz-linear-gradient(top center, #FFF, #E3E3E3);
+	background-image: -o-linear-gradient(top , #FFF, #E3E3E3);
+	background-image: linear-gradient(top, #FFF, #E3E3E3);
+}
+
+header nav > ul > li > a span{
+	color: #fff;
+	background: #fff;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	position: absolute;
+	top: -60px;
+}
+
+header nav > ul > li > a span .fa{
+	display:block;
+	line-height: 25px;
+}
+
+header nav > ul > li > a:hover > span{
+	top:0;
+	color: #999;
+	border-radius: 9px;
+	background-image:-webkit-gradient(linear,left top, left bottom, from(#FFF), to(#E3E3E3));
+	background-image: -moz-linear-gradient(top center, #FFF, #E3E3E3);
+	background-image: -o-linear-gradient(top , #FFF, #E3E3E3);
+	background-image: linear-gradient(top, #FFF, #E3E3E3);
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;	
+}
+
+
+
+	
+
+#logo{
+	box-shadow: 1px 2px 0px #eee;
+}
+
+/*Fin de Creacion de menu*/
+
+
+/*------------------------- -------------------------*/
+
+/*imagen*/
+/*
+.centrar{
+	width: 400px;
+	
+}
+*/
+/*Slider*/ 
+
+@keyframes carrusel-inf{
+	0%, 20% { background-image:url(../Imagenes/carro.png);}
+	20%, 40% { background-image:url(../Imagenes/carro2.png);}
+	40%, 60% { background-image:url(../Imagenes/carro3.png);}
+	60%, 80% { background-image:url(../Imagenes/moto1.png);}
+	80%, 100% { background-image:url(../Imagenes/moto2.png);}
+}
+
+.banner{
+	margin: auto;
+	background: transparent url(../Imagenes/carro.png) no-repeat center;
+	height: 520px;
+	width: 520px;
+	-webkit-animation: carrusel-inf 30s infinite 2s alternate ease-out;
+	-moz-animation: carrusel-inf 30s infinite 2s alternate ease-out;
+	-ms-animation: carrusel-inf 30s infinite 2s alternate ease-out;
+	-o-animation: carrusel-inf 30s infinite 2s alternate ease-out;
+	animation: carrusel-inf 30s infinite 2s alternate ease-out;
+
+
+}
+
+/* fin imagen */
+
+/*------------------------- -------------------------*/
+
+/* Contenido */
+/*
+
+main{
+	width: 70%;
+	float: left;
+	
+}
+.lado{
+	display: inline-block;
+	width: 20%;
+}
+*/
+/* menu 2*/
+
+
+aside{
+	text-align: center;
+}
+
+aside h3{
+	margin-left: 55px;
+	margin-right: 55px;
+	background-color: #999;
+	color: #777;
+	border-radius: 15px;
+}
+
+aside nav ul {
+
+	text-align:center;
+	margin-left: 55px;
+	margin-right: 55px;
+	list-style: none;
+	text-align:center;
+}
+
+aside nav ul li{
+	border: 1px solid #999;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+aside nav ul li a{
+	text-decoration:none;
+	color: #000;
+}
+
+
+
+
+
+
+/* Fin menu 2*/
+
+
+
+/* Fin contenido */
+
+/*------------------------- -------------------------*/
+
+/*pie de pagina*/
+/*
+.pie{
+	width: 90%;
+	clear: left;
+	background: #232f3e;
+	height: 80px;
+	color: #fff;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+*/
+
+.pie ul{
+float: right;
+margin-right: 6px;
+}
+
+.pie ul li {
+	display: inline;
+	padding-top: 90px;
+	position: relative;
+	text-align: center;
+	margin-right: 5px;
+}
+.pie ul li i{
+	color: #fff;
+	font-size: 25px;
+
+}
+
+
+/* fin pie de pagina */
+
+/*------------------------- -------------------------*/
+
+
+/*pagina Registrar*/
+/*
+h2{
+	width: 190px;
+	margin: 0 auto;
+}
+
+.centro{
+	width: 250px;
+	margin: 0 auto;
+}
+
+*/
